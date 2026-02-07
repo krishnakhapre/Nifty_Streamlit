@@ -20,7 +20,7 @@ st.markdown("Analyze stock price movements with technical indicators")
 # ----------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Stock_NS.csv")
+    df = pd.read_csv("Stock_HK.csv")
     df["Date"] = pd.to_datetime(df["Date"])
     df = df.sort_values("Date")
     return df
